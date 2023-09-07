@@ -104,8 +104,8 @@ def update_email():
     cur = con.cursor()
     sql_query = f'''
     UPDATE emails
-    SET contactName = '{contact_name}'
-    WHERE emailValue = '{email_value}';
+    SET emailValue = '{email_value}'
+    WHERE contactName = '{contact_name}';
     '''
     cur.execute(sql_query)
     con.commit()
